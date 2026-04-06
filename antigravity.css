@@ -1,6 +1,3 @@
-/* * {
-  outline: 1px solid red;
-} */
 body{
     font-family: 'Google Sans', 'sans-serif';
     padding: 0 40px;
@@ -12,7 +9,6 @@ body{
   align-items: center;
   padding: 0 25px;
   text-decoration: none;
-  flex-wrap: nowrap; /* prevent wrapping */
 }
 
 #main-header a {
@@ -25,12 +21,10 @@ body{
   font-weight: 500;
 }
 
-
 #main-header nav {
   margin-right: auto;
   padding:  0 30px;
 }
-
 
 #main-header ol {
   list-style: none;
@@ -46,11 +40,6 @@ body{
 #main-header ol li {
   padding: 0.5rem;
 }
-
-/* 
-#main-header ol li:last-child {
-  margin-left: auto; 
-} */
 
 #main-header button {
   background-color: black;
@@ -111,7 +100,6 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    /* background-color: #f1f1f1; */
     width: 100%;
 }
 #footer-text{
@@ -195,11 +183,11 @@ footer ul li{
 .menu-btn{
            width:1rem;
             height: 1rem;
-             display:none;    /* hamburger menu */
-            flex-direction: column;      /* hamburger menu */
-            justify-content: space-around;  /* hamburger menu */
+             display:none;    
+            flex-direction: column;    
+            justify-content: space-around; 
             display: none;
-        }
+ }
 .menu-btn span{
             height: 3px;
             width: 100%;
@@ -223,7 +211,6 @@ footer ul li{
 }
 #side-drawer ul{
     list-style: none;
-
 
 }
 #side-drawer a{
@@ -258,9 +245,6 @@ footer ul li{
     justify-content: center;
     align-items: center;
 }
-
-
-
 
 
 @media (max-width: 1024px){
@@ -309,9 +293,6 @@ footer ul li{
  
 
 @media (max-width: 600px) {
-    /* .raise-t{
-        display: none;
-    } */
     #main-header {
         width: 100%;
        padding: 20px 0;
