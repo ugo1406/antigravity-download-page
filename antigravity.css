@@ -1,0 +1,351 @@
+/* * {
+  outline: 1px solid red;
+} */
+body{
+    font-family: 'Google Sans', 'sans-serif';
+    padding: 0 40px;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+#main-header {
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  text-decoration: none;
+  flex-wrap: nowrap; /* prevent wrapping */
+}
+
+#main-header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#logo {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+#main-header nav {
+  margin-right: auto;
+  padding:  0 30px;
+}
+
+
+#main-header ol {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+  width: 100%; 
+}
+
+#main-header ol li {
+  padding: 0.5rem;
+}
+
+/* 
+#main-header ol li:last-child {
+  margin-left: auto; 
+} */
+
+#main-header button {
+  background-color: black;
+  color: white;
+  border: 1px solid #f1f1f1;
+  padding: 8px 12px;
+  width: 8rem;
+  border-radius: 30px;
+  font-size: large;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+#download-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+#download-section h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 450;
+}
+
+#previous-releases{
+    border-radius: 30px;
+    padding: 15px;
+    font-size: large;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+   border: 1px solid #f1f1f1;
+    
+}
+.footer-details-texts{
+    font-weight: 500;
+    gap: 20px;
+    line-height: 2;
+}
+
+.footer-details {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.footer-details h3{
+    font-weight: 800;
+    font-size: 30px;
+}
+.liftoff {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.footer-design{
+    font-family: 'Google Sans', 'sans-serif';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: #f1f1f1; */
+    width: 100%;
+}
+#footer-text{
+    padding: 0px 20px;
+    margin: 0;
+    font-size: 210px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    text-decoration: none;
+
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    margin-right: 10rem;
+}
+footer ul li a{
+    color: #555;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+footer ul li a:hover, .footer-details-texts div:hover{
+    color: black;
+    text-decoration: underline;
+}
+footer ul li{
+    margin-right: 20px;
+}
+.raise-t{
+    position: relative;
+    top: -25px;
+}
+
+.google-text {
+  font-family: 'Google Sans', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.google-text a {
+  color: #555;
+  text-decoration: none;
+}
+
+.select-download {
+   font-weight: 500;
+}
+.download-type {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 100px 0;
+}
+
+.download-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.download-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.download-details-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.min-req {
+    margin-top: 100px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    color: #555;
+}
+.menu-btn{
+           width:1rem;
+            height: 1rem;
+             display:none;    /* hamburger menu */
+            flex-direction: column;      /* hamburger menu */
+            justify-content: space-around;  /* hamburger menu */
+            display: none;
+        }
+.menu-btn span{
+            height: 3px;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+        
+        }
+#side-drawer{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1000;
+}
+
+#side-drawer:target{
+    display: block;
+}
+#side-drawer ul{
+    list-style: none;
+
+
+}
+#side-drawer a{
+    color:rgb(253, 239, 213) ;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+#side-drawer li{
+    margin: 1rem 0;
+}
+#side-drawer header{
+    height: 5rem;
+     display: flex;
+     justify-content: flex-end;
+    align-items: center;
+     padding: 0px 5%;
+}
+#close-side-drawer{
+    display: flex;
+    justify-content: center;
+}
+#close-side-drawer button{
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+@media (max-width: 1024px){
+    #footer-text { font-size: 120px; }
+}
+
+@media (max-width: 768px){
+    .menu-btn{
+        display: none;
+    }
+
+     .download-type{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+        #download-section{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    #download-section h1{
+        font-size: 2rem;
+    }
+    #previous-releases{
+        width: 80%;
+    }
+    #footer-text{
+        font-size: 80px;
+    }
+   .footer-details {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-details-texts {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+}
+ 
+
+@media (max-width: 600px) {
+    /* .raise-t{
+        display: none;
+    } */
+    #main-header {
+        width: 100%;
+       padding: 20px 0;
+    }
+    #main-header ol {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .menu-btn {
+        display: flex;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin-left: auto;
+    }
+     #main-header nav{
+        display: none;
+     }
+     #download-section{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+@media (max-width: 480px){
+
+     #footer-text{
+        font-size: 50px;
+    }
+}
+@media (max-width: 360px){
+        #footer-text{
+            font-size: 40px;
+        }
+}
